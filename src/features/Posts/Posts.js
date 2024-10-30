@@ -12,11 +12,10 @@ export const Posts = () => {
     const { selectedSubreddit,  isLoading } = reddit;
     const allPostFilter = useSelector(selectAllPostFilter);
 
-    
         useEffect(() => {
             console.log("entre:")
             dispatch(startGetAllPosts(selectedSubreddit));
-        }, [selectedSubreddit] [dispatch]);
+        },[dispatch]);
     
         
 

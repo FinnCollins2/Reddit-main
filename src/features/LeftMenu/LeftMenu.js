@@ -21,7 +21,8 @@ export const LeftMenu = () => {
 
     useEffect(() => {
         dispatch(getSubtopics());
-    }, []);
+    }, [dispatch]);
+    
 
     const onClickTopic = (url) => {
         dispatch(changeSubreddit(url));

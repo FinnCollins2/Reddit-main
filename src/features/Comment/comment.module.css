@@ -1,0 +1,34 @@
+.comment{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem; 
+    padding: 0.1rem 0.5rem;     
+    text-align: left;
+}
+
+.comment:hover{
+    border: 1px solid gray;
+    border-radius: 0.5rem;  
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)!important;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+p {
+    white-space: normal; /* Restablece la propiedad white-space a su valor predeterminado */
+    overflow-wrap: break-word; /* Controla cómo se rompen las palabras en caso de que el texto sea muy largo */
+    max-width: 100%; /* Evita que el párrafo sea más ancho que su contenedor */
+}
+
+p a {
+    word-break: break-all; /* Rompe los enlaces largos en líneas */
+}
+
+

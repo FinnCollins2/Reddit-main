@@ -15,7 +15,7 @@ export const Posts = () => {
         useEffect(() => {
             console.log("entre:")
             dispatch(startGetAllPosts(selectedSubreddit));
-        },[dispatch]);
+        },[dispatch],[selectedSubreddit]);
     
         
 
